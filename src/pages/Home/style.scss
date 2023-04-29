@@ -1,0 +1,11 @@
+.container {
+    background: #040406;
+    font-family: "Barlow", sans-serif;
+
+    .content-wrapper {
+        min-height: 91vh;
+        display: grid;
+        place-items: center;
+        color: #fff;
+    }
+}

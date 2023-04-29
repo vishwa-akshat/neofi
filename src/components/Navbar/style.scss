@@ -1,0 +1,32 @@
+.navbar-wrapper {
+    background: #0b0819;
+    padding: 20px 60px 20px 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .links-wrapper {
+        .nav-links {
+            color: #5a5a5a;
+            background: transparent;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            font-family: "Poppins", sans-serif;
+            cursor: pointer;
+            margin: 0 20px;
+        }
+    }
+
+    .connect-wallet-btn {
+        background-image: linear-gradient(95deg, #3387d5 25%, #7a06c9 130%);
+        color: #fff;
+        font-weight: 600;
+        font-size: 16px;
+        font-family: "Barlow", sans-serif;
+        width: 140px;
+        border-radius: 30px;
+        height: 40px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+}

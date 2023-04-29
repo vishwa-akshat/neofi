@@ -1,0 +1,28 @@
+.crypto-dropdown-card-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1c1731;
+    padding: 18px 25px;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    cursor: pointer;
+
+    .currency-info-wrapper {
+        display: flex;
+        align-items: center;
+        .currency-icon {
+            width: 25px;
+        }
+        .currency-name {
+            font-family: "Poppins";
+            font-size: 16px;
+            margin-left: 10px;
+        }
+    }
+
+    .down-icon {
+        width: 14px;
+        height: 7px;
+    }
+}

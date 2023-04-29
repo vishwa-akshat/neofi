@@ -1,0 +1,26 @@
+.card-wrapper {
+    background: #0b0819;
+    width: 460px;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    .header {
+        font-family: "Poppins";
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 18px;
+
+        .tag {
+            color: #c5c5c5;
+            font-size: 14px;
+        }
+
+        .value {
+            color: #627eea;
+            font-size: 24px;
+            font-weight: 600;
+        }
+    }
+}
