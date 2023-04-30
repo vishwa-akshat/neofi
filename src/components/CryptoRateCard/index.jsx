@@ -34,6 +34,15 @@ export default function CryptoRateCard() {
 
     return (
         <div className="card-wrapper">
+            <div className="crypto-card-header-outer">
+                <div className="crypto-image-wrapper">
+                    <img
+                        className="crypto-image"
+                        src={globalCurrency[0].image}
+                        alt="coin image"
+                    />
+                </div>
+            </div>
             <div className="header">
                 <p className="tag">Current Value</p>
                 <p className="value">

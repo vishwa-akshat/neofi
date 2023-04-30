@@ -1,11 +1,11 @@
 import { create } from "zustand";
 
-import EthereumImage from "../assets/ethereum.png";
-import BitcoinImage from "../assets/bitcoin.png";
-import MaticImage from "../assets/matic.png";
-import SolanaImage from "../assets/Solana.png";
-import xrpImage from "../assets/xrp.png";
-import BinanceImage from "../assets/binance.png";
+import EthereumImage from "../assets/ethereum.svg";
+import BitcoinImage from "../assets/bitcoin.svg";
+import MaticImage from "../assets/matic.svg";
+import SolanaImage from "../assets/solana.svg";
+import xrpImage from "../assets/xrp.svg";
+import BinanceImage from "../assets/binance.svg";
 
 const defaultCurrencyList = [
     {
