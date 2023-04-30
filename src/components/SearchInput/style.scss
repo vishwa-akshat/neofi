@@ -1,0 +1,23 @@
+.search-input-wrapper {
+    border: 1px solid #6e56f840;
+    border-radius: 30px;
+    padding: 10px 15px;
+    color: #fff;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+
+    .search-icon {
+        margin-right: 12px;
+        width: 17px;
+    }
+
+    .search-input {
+        font-size: 14px;
+        font-family: "Poppins";
+        background: transparent;
+        border: none;
+        outline: none;
+        color: #fff;
+    }
+}

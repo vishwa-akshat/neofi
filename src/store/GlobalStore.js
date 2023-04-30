@@ -42,6 +42,9 @@ const defaultCurrencyList = [
 
 const useGlobalStore = create((set, get) => ({
     currencyList: defaultCurrencyList,
+    searchedCurrencyList: defaultCurrencyList,
+    isModalOpen: false,
+    currencyInfo: null,
     globalCurrency: [
         {
             name: "Ethereum",
@@ -49,10 +52,18 @@ const useGlobalStore = create((set, get) => ({
             token: "ETHUSDT",
         },
     ],
+    setCurrencyInfo: (value) => set({ currencyInfo: value }),
+    setIsModalOpen: (value) => set({ isModalOpen: value }),
     setGlobalCurrency: (value) =>
         set({
             globalCurrency: get().currencyList.filter(
                 (cur) => cur.name === value
+            ),
+        }),
+    setSearchedCurrencyList: (value) =>
+        set({
+            searchedCurrencyList: get().currencyList.filter((cur) =>
+                cur.name.toLowerCase().includes(value.toLowerCase())
             ),
         }),
 }));

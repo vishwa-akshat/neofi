@@ -6,9 +6,13 @@ import "./style.scss";
 
 export default function CryptoDropdownCard() {
     const globalCurrency = useGlobalStore((state) => state.globalCurrency);
+    const setIsModalOpen = useGlobalStore((state) => state.setIsModalOpen);
 
     return (
-        <div className="crypto-dropdown-card-wrapper">
+        <div
+            className="crypto-dropdown-card-wrapper"
+            onClick={() => setIsModalOpen(true)}
+        >
             <div className="currency-info-wrapper">
                 <img
                     className="currency-icon"

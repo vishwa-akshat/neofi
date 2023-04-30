@@ -1,0 +1,30 @@
+.crypto-info-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    cursor: pointer;
+
+    .crypto-info {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-family: "Poppins";
+
+        .image {
+            width: 24px;
+            margin-right: 10px;
+        }
+        .crypto-name {
+            font-size: 14px;
+        }
+    }
+}
+
+.crypto-info-active {
+    background: #1b192d;
+
+    .check-icon {
+        width: 17px;
+    }
+}
