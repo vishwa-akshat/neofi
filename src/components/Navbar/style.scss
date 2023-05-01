@@ -1,12 +1,15 @@
 .navbar-wrapper {
     background: #0b0819;
-    padding: 20px 60px 20px 44px;
+    padding: 0 60px 0 44px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 70px;
 
     .links-wrapper {
+        height: 100%;
         .nav-links {
+            height: 100%;
             color: #5a5a5a;
             background: transparent;
             border: none;
@@ -15,6 +18,19 @@
             font-family: "Poppins", sans-serif;
             cursor: pointer;
             margin: 0 20px;
+            transition: all 0.2s ease;
+
+            &:hover {
+                color: #627eea;
+                font-weight: 600;
+                border-bottom: 2px solid #627eea;
+            }
+        }
+
+        .active-nav-link {
+            color: #627eea;
+            font-weight: 600;
+            border-bottom: 2px solid #627eea;
         }
     }
 
@@ -28,5 +44,6 @@
         border-radius: 30px;
         height: 40px;
         border: 1px solid rgba(255, 255, 255, 0.5);
+        cursor: pointer;
     }
 }
