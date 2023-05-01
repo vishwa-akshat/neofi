@@ -55,3 +55,20 @@
         }
     }
 }
+
+@media only screen and (max-width: 500px) {
+    .card-wrapper {
+        width: 90vw;
+        padding: 50px 20px 20px;
+
+        .header {
+            .value {
+                font-size: 20px;
+            }
+        }
+        .crypto-card-header-outer {
+            top: -30px;
+            left: 38vw;
+        }
+    }
+}

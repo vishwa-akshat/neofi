@@ -1,19 +1,25 @@
-.container {
+.container-outer {
+    width: 100vw;
     background: #040406;
-    font-family: "Barlow", sans-serif;
 
-    .content-wrapper {
-        min-height: 91vh;
-        display: grid;
-        place-items: center;
-        color: #fff;
-    }
-    .modal-container {
-        position: absolute;
-        background: #0b081986;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+    .container {
+        max-width: 1440px;
+        margin: 0 auto;
+        font-family: "Barlow", sans-serif;
+
+        .content-wrapper {
+            min-height: calc(100vh - 70px);
+            display: grid;
+            place-items: center;
+            color: #fff;
+        }
+        .modal-container {
+            position: absolute;
+            background: #0b081986;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
     }
 }

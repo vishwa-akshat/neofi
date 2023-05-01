@@ -35,3 +35,14 @@
     background: #1c1731;
     border: none !important;
 }
+
+@media only screen and (max-width: 425px) {
+    .amount-details-wrapper {
+        .input-wrapper {
+            .input {
+                width: 85%;
+                font-size: 20px;
+            }
+        }
+    }
+}

@@ -10,18 +10,20 @@ export default function Home() {
     const isModalOpen = useGlobalStore((state) => state.isModalOpen);
 
     return (
-        <div className="container">
+        <div className="container-outer">
             <Navbar />
-            <div className="content-wrapper">
-                <CryptoRateCard />
-            </div>
-            {isModalOpen ? (
-                <div className="modal-container">
-                    <SearchModal />
+            <div className="container">
+                <div className="content-wrapper">
+                    <CryptoRateCard />
                 </div>
-            ) : (
-                <></>
-            )}
+                {isModalOpen ? (
+                    <div className="modal-container">
+                        <SearchModal />
+                    </div>
+                ) : (
+                    <></>
+                )}
+            </div>
         </div>
     );
 }

@@ -1,49 +1,88 @@
-.navbar-wrapper {
+.navbar-outer {
     background: #0b0819;
-    padding: 0 60px 0 44px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     height: 70px;
 
-    .links-wrapper {
+    .navbar-wrapper {
+        max-width: 1440px;
+        margin: 0 auto;
         height: 100%;
-        .nav-links {
-            height: 100%;
-            color: #5a5a5a;
-            background: transparent;
-            border: none;
-            outline: none;
-            font-size: 16px;
-            font-family: "Poppins", sans-serif;
-            cursor: pointer;
-            margin: 0 20px;
-            transition: all 0.2s ease;
+        padding: 0 60px 0 44px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-            &:hover {
+        .logo {
+            width: 120px;
+        }
+
+        .links-wrapper {
+            height: 100%;
+            .nav-links {
+                height: 100%;
+                color: #5a5a5a;
+                background: transparent;
+                border: none;
+                outline: none;
+                font-size: 16px;
+                font-family: "Poppins", sans-serif;
+                cursor: pointer;
+                margin: 0 20px;
+                transition: all 0.2s ease;
+
+                &:hover {
+                    color: #627eea;
+                    font-weight: 600;
+                    border-bottom: 2px solid #627eea;
+                }
+            }
+
+            .active-nav-link {
                 color: #627eea;
                 font-weight: 600;
                 border-bottom: 2px solid #627eea;
             }
         }
 
-        .active-nav-link {
-            color: #627eea;
+        .connect-wallet-btn {
+            background-image: linear-gradient(95deg, #3387d5 25%, #7a06c9 130%);
+            color: #fff;
             font-weight: 600;
-            border-bottom: 2px solid #627eea;
+            font-size: 16px;
+            font-family: "Barlow", sans-serif;
+            width: 140px;
+            border-radius: 30px;
+            height: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            cursor: pointer;
         }
     }
+}
 
-    .connect-wallet-btn {
-        background-image: linear-gradient(95deg, #3387d5 25%, #7a06c9 130%);
-        color: #fff;
-        font-weight: 600;
-        font-size: 16px;
-        font-family: "Barlow", sans-serif;
-        width: 140px;
-        border-radius: 30px;
-        height: 40px;
-        border: 1px solid rgba(255, 255, 255, 0.5);
-        cursor: pointer;
+@media only screen and (max-width: 768px) {
+    .navbar-outer {
+        .navbar-wrapper {
+            padding: 0 60px 0 44px;
+
+            .logo {
+                width: 90px;
+            }
+
+            .links-wrapper {
+                display: none;
+            }
+
+            .connect-wallet-btn {
+                font-size: 14px;
+                width: 130px;
+                height: 35px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 425px) {
+    .navbar-outer {
+        .navbar-wrapper {
+            padding: 0 40px;
+        }
     }
 }
